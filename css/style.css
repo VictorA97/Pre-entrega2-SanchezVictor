@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**ESTILO HEADER**/
+.menu ul {
+    display: flex;
+    text-decoration: none;
+    color:black
+    
+}
+.menu ul :hover{
+    color: blue;
+}
+
+.menu a{
+    font-weight: 600;
+    padding-right: 30px;
+    text-decoration: none;
+    color:black
+}
+
+/*body{
+    font-family: sans-serif;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url("../assets/img/cafet.jpg");
+}*/
+/*
+a{
+    text-decoration: none;
+    color:black
+}
+*/
+header {
+    display: flex;
+    height: 100px;
+    padding: 10px;
+    background-image: url("../assets/img/cafet.jpg");
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+      
+}
+
+.logo img{
+    height: 50px;
+}
+
+.bannerIndex{
+    height: 70vh;
+    background-image: url("../assets/img/cafet.jpg");
+}
+
+/**ESTILO DEL FOOTER**/
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0px;
+    background-color: black;
+    display: flex;
+   
+}
+
+.logoFooter{
+    height: 70px;
+    margin-bottom: 1rem;
+}
+
+.socialIconsContainer, .footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.social-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #f2f2f2;
+    background-image: url("../assets/img/face.jpg");
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.social-icon:hover{
+    background-color: #121212;
+    filter: invert(1);
+}
+
+.social-icon:nth-of-type(2){
+    background-image: url("../assets/img/insta.png");
+}
+
+.social-icon:nth-of-type(3){
+    background-image: url("../assets/img/pajaro.png");
+}
+
+.footer-menu-container{
+    list-style-type: none;
+    color: #f2f2f2;
+    font-size: 18px;
+}
+
+.menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.menu-item:hover{
+    opacity: 1;
+}
+
+/**ESTILO CONTACTO**/
+
+.main-contacto{
+    height: auto;
+    width: 100%;
+    font-family: 'montserrat', sans-serif;
+    transition: 0.5s;;
+}
+
+.contact{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFBEE;
+}
+
+.contact-image-jpg{
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.contact-image{
+    width: 50%;
+}
+
+.contact-right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 7.3% 0 4.7%;
+    width: 50%;
+}
+/*
+.contact-title{
+    font-size: 100px;
+    font-family:'Bellefair', serif;
+    font-weight: 400;
+    margin-bottom: 70%;
+    text-transform: uppercase;
+}
+*/
+.contact-form, .contact-input-line{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-input-line{
+    margin-bottom: 45px;
+}
+
+.contac-label{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contact-input{
+    height: 30px;
+    outline: none;
+    padding: 5px 0;
+    border-bottom: 2px solid #121212;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    color: #121212;
+    background-color: transparent;
+}
+
+.contact-input--textarea{
+    height: 100px;
+    outline: none;
+    padding: 5px 0;
+    border-bottom: 2px solid #121212;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    color: #121212;
+    background-color: transparent;
+    resize: none;
+}
+
+.contact-submit-button{
+    padding: 5px 55px;
+    background-color: #121212;
+    border-radius: 50px;
+    color: #f2f2f2;
+    font-weight: 600;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact-submit-button:hover{
+    background-color: #2e2e2e;
+}
+
+/**ESTILO "NOSOTROS"**/
+
+.about-us {
+    display: flex;
+    height: auto;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: #FFFBEE;
+}
+
+/**ESTILO PRODUCTOS**/
+
+.productos{
+    height: 70vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFBEE;
+}
+    
+
+
+.cartas-productos{
+    display: flex;
+    
+    gap: 50px;
+}
+
+.cafeConLeche{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.cafeNegro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.submarino{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/**ESTILO UBICACION**/
+
+.contenedor{
+    display: flex;
+    background: #FFFBEE;
+    justify-content: space-between;
+}
+
+
+
