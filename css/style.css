@@ -2,73 +2,91 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.5s;
 }
-/**ESTILO HEADER**/
-.menu ul {
+
+/**-----------HEADER------------**/
+header {
     display: flex;
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+
+    padding: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: 2px solid black;
+}
+.logo {
+    display: flex;     
+}
+
+.logo img{
+    height: 100px;
+}
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    font-weight: 600;
+    flex-wrap: wrap;
+}
+
+.navBar a{
     text-decoration: none;
     color:black
     
 }
-.menu ul :hover{
+
+.navBar ul :hover{
     color: blue;
+    border-bottom: solid red;
 }
 
-.menu a{
-    font-weight: 600;
-    padding-right: 30px;
-    text-decoration: none;
-    color:black
+.navBar ul li{
+    list-style: none;
 }
 
-/*body{
-    font-family: sans-serif;
-    margin: 0;
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    background-image: url("../assets/img/cafet.jpg");
-}*/
-/*
-a{
-    text-decoration: none;
-    color:black
-}
-*/
-header {
+.navBar ul{
     display: flex;
-    height: 100px;
-    padding: 10px;
-    background-image: url("../assets/img/cafet.jpg");
-    justify-content: space-between;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
-.logo {
+.nombre-cafeteria{
     display: flex;
-      
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.logo img{
-    height: 50px;
+
+.inicio1{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/img/cafeshop.jpg");
+    background-size: cover;
+    background-position: center;
+ 
 }
 
-.bannerIndex{
-    height: 70vh;
-    background-image: url("../assets/img/cafet.jpg");
-}
 
-/**ESTILO DEL FOOTER**/
+/**---------------FOOTER---------------**/
 
 footer{
     width: 100%;
-    position: absolute;
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+
+
     bottom: 0;
     left: 0;
     padding: 0px;
-    background-color: black;
+    background-color: white;
     display: flex;
-   
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: center;
 }
 
 .logoFooter{
@@ -111,7 +129,7 @@ footer{
 
 .footer-menu-container{
     list-style-type: none;
-    color: #f2f2f2;
+    color: black;
     font-size: 18px;
 }
 
@@ -125,174 +143,403 @@ footer{
     opacity: 1;
 }
 
-/**ESTILO CONTACTO**/
-
-.main-contacto{
-    height: auto;
+/**-----------MENU STYLE CON FLEXBOX---------------**/
+.todo{
     width: 100%;
-    font-family: 'montserrat', sans-serif;
-    transition: 0.5s;;
-}
-
-.contact{
-    height: 100%;
-    width: 100%;
+    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #FFFBEE;
-}
-
-.contact-image-jpg{
-    height: 100%;
-    width: 50%;
-    overflow: hidden;
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-}
-
-.contact-image{
-    width: 50%;
-}
-
-.contact-right-side{
-    display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    padding: 0 7.3% 0 4.7%;
-    width: 50%;
+    padding: 0 8%;
+    
+
+
 }
-/*
-.contact-title{
-    font-size: 100px;
-    font-family:'Bellefair', serif;
-    font-weight: 400;
-    margin-bottom: 70%;
-    text-transform: uppercase;
+
+.title{
+    font-size: 90px;
+    margin: 4rem 0 2rem 0;
+    
 }
-*/
-.contact-form, .contact-input-line{
+
+.product-grid-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.product-container{
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+.product-image-wrapper{
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.product-image{
     width: 100%;
 }
 
-.contact-input-line{
-    margin-bottom: 45px;
-}
-
-.contac-label{
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.contact-input{
-    height: 30px;
-    outline: none;
-    padding: 5px 0;
-    border-bottom: 2px solid #121212;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    color: #121212;
-    background-color: transparent;
-}
-
-.contact-input--textarea{
-    height: 100px;
-    outline: none;
-    padding: 5px 0;
-    border-bottom: 2px solid #121212;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    color: #121212;
-    background-color: transparent;
-    resize: none;
-}
-
-.contact-submit-button{
-    padding: 5px 55px;
-    background-color: #121212;
-    border-radius: 50px;
-    color: #f2f2f2;
-    font-weight: 600;
-    border: none;
-    font-size: 18px;
+.product-image:hover{
+    opacity: 0.6;
+    transform: scale(1.1);
     cursor: pointer;
 }
 
-.contact-submit-button:hover{
-    background-color: #2e2e2e;
+.product-info-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 1rem;
 }
 
-/**ESTILO "NOSOTROS"**/
+.product-seller{
+    text-transform: uppercase;
+    font-size: 12px;
+    color:#999;
+}
 
-.about-us {
+.product-title{
+    font-size: 20px;
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+.product-price{
+    color: #121212;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/**MENU RESPONSIVE**/
+/*
+@media(max-width: 576px){
+
+    .title{
+        display: flex;
+        font-size: 60px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .product-image-wrapper{
+        height: auto;
+    }
+
+    .todo {
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+
+    .product-container{
+        width: auto;
+        display: flex;
+        justify-content: center
+    
+    }
+
+    .product-grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+  }
+  */
+
+/**--------------CONTACTO CON GRIDS--------------------**/
+/**-------------first mobile design-----------**/
+
+.contenedor-contacto{
+    
+    color: #fff;
+}
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.ul {
+    list-style: none;
+    padding: 0;
+}
+
+.texto {
+    display: none;
+}
+
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contacto-wrapper > * {
+    padding: 1em;
+}
+
+.contacto-form {
+    background: #222222;
+}
+
+.contacto-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contacto-form form label {
+    display: block;
+}
+
+.contacto-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contacto-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contacto-form form button,
+.contacto-form form input,
+.contacto-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #d63031;
+}
+
+.contacto-form form button {
+    background: #B70E21;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contacto-form form button:hover,
+.contacto-form form button:focus {
+    background: #d63031;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+/* CONTACT INFO */
+.contacto-info {
+    background: #000;
+}
+
+.contacto-info ul li{
+    list-style: none;
+}
+
+.contacto-info h4, .contacto-info ul, .contacto-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+/**-------------PANTALLA GRANDE CONTACTO--------------**/
+/*
+@media(min-width: 768px) {
+    .contenedor-contacto{
+        padding: 0 4em;
+    }
+
+    .texto {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 3em;
+        color: #181818;
+    }
+
+    .contacto-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding: 10px;
+    }
+    .contacto-wrapper > * {
+        padding: 2em;
+    }
+
+    .contacto-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .contacto-info ul li{
+        list-style: none;
+        text-align: left;
+    }
+    .contacto-info p{
+        text-align: left;
+    }
+
+}
+/*
+
+/**PANTALLA CHICA**/
+
+/*
+@media(max-width: 576px){
+    .contacto-form form {
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+}
+*/
+
+/**Nosotros**/
+
+
+.contenedor-quienes-somos{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 30px;
+}
+
+.quienes-somos{
     display: flex;
-    height: auto;
+    flex-direction: column;
     padding: 10px;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    background: #FFFBEE;
+    border-bottom: 2px solid #FFE53B ;
 }
 
-/**ESTILO PRODUCTOS**/
+.titulo1{
+width: auto;
+font-size: 40px;
+justify-content: flex-start;
+}
 
-.productos{
-    height: 70vh;
-    width: auto;
+.quienes-somos p{
+    font-size: 30px;
+}
+
+.contenedor-nuestra-vision{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 30px;
+}
+
+.vision{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #FFFBEE;
+    flex-direction: column;
+    padding: 10px;
 }
+
+.titulo2{
+width: auto;
+font-size: 40px;
+justify-content: flex-start;
+}
+
+.vision p{
+    font-size: 30px;
+}
+ /**Ubicación**/
+
+.contenedor-ubicacion{
+    display: flex;
+    background:#000;
+}
+
+.texto1{
+    margin: 30px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    border: 5px solid red;
+    background: white;
+}
+
+.texto1 h2{
+    align-self: center;
+}
+
+@media(max-width: 576px){
+
+    .title{
+        display: flex;
+        font-size: 60px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .product-image-wrapper{
+        height: auto;
+    }
+
+    .todo {
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+
+    .product-container{
+        width: auto;
+        display: flex;
+        justify-content: center
     
+    }
 
+    .product-grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
-.cartas-productos{
-    display: flex;
+    .contacto-form form {
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+
     
-    gap: 50px;
+  }
+ @media(min-width: 768px) {
+    .contenedor-contacto{
+        padding: 0 4em;
+    }
+
+    .texto {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 3em;
+        color: #181818;
+    }
+
+    .contacto-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding: 10px;
+    }
+    .contacto-wrapper > * {
+        padding: 2em;
+    }
+
+    .contacto-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .contacto-info ul li{
+        list-style: none;
+        text-align: left;
+    }
+    .contacto-info p{
+        text-align: left;
+    }
+
 }
-
-.cafeConLeche{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-}
-
-.cafeNegro{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.submarino{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-/**ESTILO UBICACION**/
-
-.contenedor{
-    display: flex;
-    background: #FFFBEE;
-    justify-content: space-between;
-}
-
-
-

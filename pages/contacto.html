@@ -1,64 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+
 </head>
+
 <body>
     <header>
+
         <div class="logo">
-            <img src="../assets/img/logo.jpg" alt="taza de cafe" class="logo-img">
-            <h2 class="nombre-cafetería">Coffee time</h2>
+            <img src="../assets/img/logo-png.png" alt="coffee time" class="logo-img">
+            <h2 class="nombre-cafeteria">Coffee time</h2>
         </div>
 
-        <nav class="menu">
+        <nav class="navBar">
             <ul>
-                <li><a href="../index.html">incio</a></li>
+                <li><a href="../index.html">Incio</a></li>
+                <li><a href="./menu.html">Menu</a></li>
                 <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./ubicacion.html">ubicación</a></li>
-                <li><a href="./contacto.html">contacto</a></li>
-                <li><a href="./productos.html">productos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./ubicacion.html">Ubicación</a></li>
             </ul>
         </nav>
+
     </header>
+    <div class="contenedor-contacto">
 
-    <main class="main-contacto">
-        <section class="contact">
-            <div class="contact-image-jpg">
-                <img src="../assets/img/logo.jpg" alt="" class="contact-image">
-            </div>
-            <div class="contact-rigth-side">
-                <h1 class="contact-title">Contáctenos»</h1>
-                <form action="" class="contact-form">
-                    <div class="contact-input-line">
-                        <label for="name" class="contact-label">Nombre</label>
-                        <input type="name" name="name" id="name" class="contact-input">                      
-                    </div>
+        <h2 class="texto">Contacto</h2>
 
-                    <div class="contact-input-line">
-                        <label for="email" class="contact-label">Correo</label>
-                        <input type="email" name="email" id="email" class="contact-input">                       
-                    </div>
-
-                    <div class="contact-input-line">
-                        <label for="subject" class="contact-label">Tema</label>
-                        <input type="subject" name="subject" id="subject" class="contact-input">                     
-                    </div>
-
-                    <div class="contact-input-line">
-                        <label for="message" class="contact-label">Mensaje</label>
-                        <textarea name="message" name="message" id="message" class="contact-input"></textarea>                     
-                    </div>
-                    <input type="submit" value="Enviar Mensaje" class="contact-submit-button">
+        <div class="contacto-wrapper">
+            <div class="contacto-form">
+                <h3>contact us</h3>
+                <form action="">
+                    <p>
+                        <label>Nombre</label>
+                        <input type="text" name="fullname">
+                    </p>
+                    <p>
+                        <label>Correo</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Telefono</label>
+                        <input type="tel" name="telefono">
+                    </p>
+                    <p>
+                        <label>Asunto</label>
+                        <input type="text" name="asunto">
+                    </p>
+                    <p>
+                        <label>Mensaje</label>
+                        <textarea name="mensaje" rows="3"></textarea>
+                    </p>
+                    <p>
+                        <button type="submit">
+                            Enviar
+                        </button>
+                    </p>
                 </form>
+
             </div>
-        </section>
-    </main>
+            <div class="contacto-info">
+                <h4>Más información</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> av siempreviva 742 springfield</li>
+                    <li><i class="fas fa-phone"></i> (111) 111 111 111</li>
+                    <li><i class="fas fa-envelope-open-text"></i> coffeeTime@gmail.com</li>
+                </ul>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident ipsam necessitatibus
+                    repellendus?</p>
+                <p>CoffeeTime.com</p>
+
+            </div>
+        </div>
+
+    </div>
+
     <footer>
-        <img src="./assets/img/logo.jpg" alt="" class="logoFooter">
+        <img src="../assets/img/logo-png.png" alt="" class="logoFooter">
         <div class="socialIconsContainer">
             <a href="" class="social-icon"></a>
             <a href="" class="social-icon"></a>
@@ -71,4 +99,5 @@
         </ul>
     </footer>
 </body>
+
 </html>
