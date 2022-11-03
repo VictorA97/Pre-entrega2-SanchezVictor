@@ -1,0 +1,21 @@
+/* ESTILO NAVBAR */
+/*======ESTILO HEADER======*/
+.navbar-expand-lg .navbar-collapse{
+    justify-content: flex-end;
+    font-weight: bolder;
+    font-size: 18px;
+  
+}
+
+.barra-de-navegacion {
+    background-image: url("../assets/img/promo2.jpg");
+    border-bottom: 2px solid black;
+}
+
+/*======ESTILO SLIDER======*/
+.carousel img{
+    height: 75vh;
+}
+.carousel-inner{
+    max-height: 39rem;
+}

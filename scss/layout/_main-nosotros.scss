@@ -1,0 +1,46 @@
+/**Nosotros**/
+
+.contenedor-quienes-somos{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 30px;
+}
+
+.quienes-somos{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-bottom: 2px solid #FFE53B ;
+}
+
+.titulo1{
+width: auto;
+font-size: 40px;
+justify-content: flex-start;
+}
+
+.quienes-somos p{
+    font-size: 30px;
+}
+
+.contenedor-nuestra-vision{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 30px;
+}
+
+.vision{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.titulo2{
+width: auto;
+font-size: 40px;
+justify-content: flex-start;
+}
+
+.vision p{
+    font-size: 30px;
+}
