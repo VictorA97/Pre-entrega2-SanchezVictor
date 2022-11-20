@@ -1,7 +1,7 @@
 /**--------------CONTACTO CON GRIDS--------------------**/
 .contenedor-contacto{
     
-    color: #fff;
+    color: black;
 }
 .container {
     max-width: 1170px;
@@ -29,7 +29,7 @@
 }
 
 .contacto-form {
-    background: #222222;
+    background: $color-background;
 }
 
 .contacto-form form {
@@ -79,7 +79,8 @@
 
 /* CONTACT INFO */
 .contacto-info {
-    background: #000;
+    background: $color-background;
+    border-left: 2px solid black;
 }
 
 .contacto-info ul li{

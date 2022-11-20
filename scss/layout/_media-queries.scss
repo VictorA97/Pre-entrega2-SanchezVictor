@@ -11,8 +11,7 @@
     }
 
     .todo {
-        display: grid;
-        grid-template-columns: 1fr ;
+        @include grid-column;
     }
 
     .product-container{
@@ -23,13 +22,11 @@
     }
 
     .product-grid-container{
-        display: grid;
-        grid-template-columns: 1fr;
+        @include grid-column;
     }
 
     .contacto-form form {
-        display: grid;
-        grid-template-columns: 1fr ;
+        @include grid-column;
     }
 
     
@@ -70,4 +67,21 @@
         text-align: left;
     }
 
+}
+
+@media (max-width: 450px){
+    .contenedor-quienes-somos{
+        @include grid-column;
+    }
+
+    .contenedor-quienes-somos img{
+        display: none;
+    }
+    .contenedor-nuestra-vision{
+        @include grid-column;
+    }
+
+    .contenedor-nuestra-vision img{
+        display: none;
+    }
 }
